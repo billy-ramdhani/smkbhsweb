@@ -10,7 +10,7 @@ class Home extends CI_Controller {
       $this->load->model('banner_model', 'banner', true);
       $this->load->model('posting_model', 'posting', true);
       $this->load->model('category_model', 'category', true);
-      $this->load->model('guru_model','guru', true);
+      $this->load->model('kepegawaian_model','kepegawaian', true);
    }
    
    public function index()
@@ -25,7 +25,7 @@ class Home extends CI_Controller {
       $data['lastNews']    = $this->posting->getLastNews();
       $data['video_game']  = $this->posting->getVideoGames();
       $data['category']    = $this->category->getCategory();
-      $data['guru_kita']   = $this->guru->getGuru();
+      $data['kepegawaian'] = $this->kepegawaian->get_all();
 
       $data['page'] = 'home';
       $this->load->view('front/layouts/app', $data);

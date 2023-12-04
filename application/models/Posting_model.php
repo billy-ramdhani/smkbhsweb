@@ -144,10 +144,10 @@ class Posting_model extends CI_Model {
    public function uploadImage(){
 
       $config = [
-        'upload_path'     => './images/posting',
+        'upload_path'     => './assets/images/posting',
         'encrypt_name'    => TRUE,
         'allowed_types'   => 'jpg|jpeg|gif|png|JPG|PNG',
-        'max_size'        => 1000,
+        'max_size'        => 2000,
         'max_width'       => 0,
         'max_height'      => 0,
         'overwrite'       => TRUE,
@@ -219,6 +219,29 @@ class Posting_model extends CI_Model {
       return $this->pagination->create_links();
    }
 
+   //upload post
+   public function upload_post($data){
+         $config['upload_path']      = './images/posting/';
+         $config['allowed_types']    = 'jpg|jpeg|png';
+         $config['max_size']         = 2000; // KB
+         $config['file_ext_tolower'] = TRUE;
+
+        $this->load->library('upload', $config);
+
+        if ($this->upload->do_upload('photo')) {
+            $uploaded_data = $this->upload->data();
+            $data['photo'] = $uploaded_data['file_name'];
+
+            // Masukkan data ke database
+            $this->db->insert('guru', $data);
+
+            return 'Data uploaded successfully.';
+        } else {
+            return $this->upload->display_errors();
+        }
+    }
+
+   
 }
 
 /* End of file Category_model.php */

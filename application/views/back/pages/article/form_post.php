@@ -9,7 +9,10 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Admin - Garsansnews.com</title>
+  <title>Admin SMK BHS</title>
+  <!-- Favicon -->
+  <link href="<?php base_url() ?>assets/images/favicon/favicon.ico" rel="icon">
+
 
   <!-- Font Awesome -->
   <link href="<?= base_url("assets/back/vendors/fontawesome-free/css/all.min.css") ?>" rel="stylesheet" type="text/css">
@@ -19,6 +22,8 @@
   <link href="<?= base_url("assets/back/vendors/datatables/dataTables.bootstrap4.min.css") ?>" rel="stylesheet">
   <!-- Custom styles for this template-->
   <link href="<?= base_url("assets/back/css/sb-admin-2.min.css") ?>" rel="stylesheet">
+  <!-- CKeditor -->
+  <script src="https://cdn.ckeditor.com/4.16.2/standard/ckeditor.js"></script>
 
   <link rel="stylesheet" href="<?= base_url("assets/back/vendors/summernote/dist/summernote-bs4.min.css") ?>">
 
@@ -70,8 +75,11 @@
                <div class="form-group row">
                   <label for="article" class="col-sm-2 col-form-label"><span class="text-danger">*</span> Konten</label>
                   <div class="col-sm-10">
-                     <?= form_textarea('content', $input->content, ['row' => 4, 'class' => 'form-control', 'id' => 'summernote']); ?>
+                  <?= form_textarea('content', $input->content, ['rows' => 4, 'class' => 'form-control', 'id' => 'editor1']); ?>
                      <?= form_error('content', '<small class="form-text text-danger">', '</small>') ?>
+                     <script>
+                        CKEDITOR.replace('editor1');
+                     </script>
                   </div>
                </div>
 

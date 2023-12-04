@@ -7,8 +7,7 @@
                 <div class="col-lg-6 align-self-center text-center text-lg-start mb-lg-5">
                     <div class="btn btn-sm border rounded-pill text-white px-3 mb-3 animated slideInRight">SMK <span class="text-warning">BHS</span></div>
                     <h1 class="display-4 text-white mb-4 animated slideInRight">Membentuk Ahli Farmasi dan Kimia Industri Berkualitas</h1>
-                    <p class="text-white mb-4 animated slideInRight">Tempor rebum no at dolore lorem clita rebum rebum ipsum
-                        rebum stet dolor sed justo kasd. Ut dolor sed magna dolor sea diam. Sit diam sit</p>
+                    <p class="text-white mb-4 animated slideInRight"></p>
                     <a href="#" class="btn btn-outline-light py-sm-3 px-sm-5 rounded-pill animated slideInRight">Joind Us</a>
                 </div>
                 <div class="col-lg-6 align-self-end text-center text-lg-end">
@@ -88,10 +87,8 @@
             <div class="row g-5 align-items-center">
                 <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
                     <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">Program Keahlian</div>
-                    <h1 class="mb-4">Our Excellent AI Solutions for Your Business</h1>
-                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam
-                        amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus
-                        clita duo justo et tempor eirmod magna dolore erat amet</p>
+                    <h1 class="mb-4">Farmasi dan Kimia Industri</h1>
+                    <p class="mb-4">Jurusan Farmasi Klinis dan Komunitas di SMK Bina Harapan Sumedang mempersiapkan siswa untuk menjadi praktisi farmasi yang berpengetahuan luas dan siap berkontribusi dalam lingkungan klinis maupun komunitas. Sementara itu, Jurusan Kimia Industri membekali siswa dengan pengetahuan dan keterampilan yang relevan untuk memasuki dunia industri kimia. Keduanya menciptakan lingkungan pembelajaran yang berfokus pada penerapan praktis dan persiapan langsung untuk karier di bidang terkait.</p>
                     <a class="btn btn-primary rounded-pill px-4" href="">Read More</a>
                 </div>
                 <div class="col-lg-7">
@@ -144,7 +141,7 @@
                     <?php foreach($lastNews as $ln) :?>
                         <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s">
                             <div class="case-item d-flex rounded p-3" style="background: rgba(150, 150, 150, 0.1);">
-                            <img class="img-fluid rounded" src="<?= base_url("assets/img/posting/$ln->photo") ?>" alt="" style="max-width: 300px; max-height: 200px;">
+                            <img class="img-fluid rounded" src="<?= base_url("assets/images/posting/$ln->photo") ?>" alt="" style="max-width: 300px; max-height: 200px;">
                                 <div class="ms-3">
                                 <h4 class="lh-base text-dark mb-3"> <?= $ln->title ?> </h4> 
                                  <p class="text-dark"><?= character_limiter($ln->content, 150) ?></p>
@@ -164,15 +161,57 @@
      <!-- Testimonial Start -->
      <div class="container-fluid bg-primary feature">
     <div class="container-xxl py-5">
-        <div class="container py-5">
+        
+    </div>
+    </div>
+    <!-- Testimonial End -->   
+    
+    <!-- Testimonial Start -->
+    <div class="container-fluid bg-primary feature">
+    <div class="container py-3">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="btn btn-sm border rounded-pill text-light px-3 mb-3">Guru Kami</div>
+                    <h1 class="mb-4 text-light">Kenali Guru-Guru Kita</h1>
+                    <p class="mb-4 text-light">Dibalik setiap ilmu yang diajarkan, ada kecerdasan yang menginspirasi. Gurumu bukan sekadar pendidik, tetapi juga pemandu yang mampu membimbingmu ke arah kesuksesan. Mereka adalah pilar pengetahuan, sumber inspirasi, dan katalisator pertumbuhanmu. Kenali gurumu, temukan keunikan mereka, dan buatlah setiap pelajaran menjadi perjalanan pembelajaran yang tak terlupakan.</p>
+                    <a class="btn btn-light rounded-pill px-4" href="">Lihat</a>
+                </div>
+                <div class="col-lg-7">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="row g-4">
+                                <?php foreach($kepegawaian as $gk) :?>
+                                <div class="col-12 wow fadeIn" data-wow-delay="0.1s">
+                                    <div class="team-item bg-white text-center rounded p-4 pt-0">
+                                        <img class="img-fluid rounded-circle p-4" src="<?= base_url("assets/images/kepegawaian/$gk->photo") ?>" alt="">
+                                        <h5 class="mb-0"><?= $gk->nama ?>, <?= $gk->gelar ?></h5>
+                                        <small><?= $gk->jabatan?></small>
+                                        <div class="d-flex justify-content-center mt-3">
+                                            <a class="btn btn-square btn-primary m-1" href=""><i
+                                                    class="fab fa-mail-in"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            <?php endforeach;?>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Testimonial End -->   
+
+    <!-- Team Start -->
+    <div class="container-fluid bg-light py-5">
+    <div class="container py-5">
             <div class="row g-5">
                 <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
-                    <div class="btn btn-sm border rounded-pill text-white px-3 mb-3">Testimonial</div>
-                    <h1 class="mb-4 text-white">Testimonial</h1>
-                    <p class="mb-4 text-white">Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam
-                        amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus
-                        clita duo justo et tempor eirmod magna dolore erat amet</p>
-                    <a class="btn btn-light rounded-pill px-4" href="">Join Us</a>
+                    <div class="btn btn-sm border rounded-pill text-dark px-3 mb-3">Testimonial</div>
+                    <h1 class="mb-4 text-dark">Testimonial</h1>
+                    <p class="mb-4 text-dark">Terjun ke dalam pengalaman inspiratif, Menu Testimonial Alumni SMK BHS adalah jendela ke dunia prestasi para lulusan. Di sini, kisah sukses alumni membentang, menggambarkan perjalanan karier, pencapaian, dan pengalaman belajar di SMK Bina Harapan Sumedang. Temukan inspirasi, pandangan, dan kesuksesan mereka yang membawa semangat belajar dan rasa kebanggaan, menciptakan jejak berharga bagi generasi berikutnya.</p>
+                    <a class="btn btn-primary rounded-pill px-4" href="">Join Us</a>
                 </div>
                 <div class="col-lg-7 wow fadeIn" data-wow-delay="0.5s">
                     <div class="owl-carousel testimonial-carousel border-start border-primary">
@@ -210,45 +249,6 @@
                                     <h5 class="mb-1">Client Name</h5>
                                     <span>Profession</span>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-    <!-- Testimonial End -->    
-
-    <!-- Team Start -->
-    <div class="container-fluid bg-light py-5">
-        <div class="container py-5">
-            <div class="row g-5 align-items-center">
-                <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
-                    <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">Guru Kami</div>
-                    <h1 class="mb-4">Kenali Guru-Guru Kita</h1>
-                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam
-                        amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus
-                        clita duo justo et tempor eirmod magna dolore erat amet</p>
-                    <a class="btn btn-primary rounded-pill px-4" href="">Lihat</a>
-                </div>
-                <div class="col-lg-7">
-                    <div class="row g-4">
-                        <div class="col-md-6">
-                            <div class="row g-4">
-                                <?php foreach($guru_kita as $gk) :?>
-                                <div class="col-12 wow fadeIn" data-wow-delay="0.1s">
-                                    <div class="team-item bg-white text-center rounded p-4 pt-0">
-                                        <img class="img-fluid rounded-circle p-4" src="<?= base_url("assets/img/guru/$gk->photo") ?>" alt="">
-                                        <h5 class="mb-0"><?= $gk->nama_guru ?></h5>
-                                        <small><?= $gk->bidang_pelajaran?></small>
-                                        <div class="d-flex justify-content-center mt-3">
-                                            <a class="btn btn-square btn-primary m-1" href=""><i
-                                                    class="fab fa-mail-in"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            <?php endforeach;?>
                             </div>
                         </div>
                     </div>

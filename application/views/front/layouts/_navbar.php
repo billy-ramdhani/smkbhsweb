@@ -21,18 +21,20 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto">
-                        <a href="<?= base_url('home')?>" class="nav-item nav-link">BERANDA</a>
-                        <a href="<?= base_url('blog')?>" class="nav-item nav-link">MADING SEKOLAH</a>
-                        <a href="<?= base_url('blog/bhsopen')?>" class="nav-item nav-link">BHS OPEN</a>
+                        <a href="<?= base_url('home')?>" class="nav-item nav-link">Beranda</a>
+                        <a href="<?= base_url('blog')?>" class="nav-item nav-link">Mading Sekolah</a>
+                        <a href="#" class="nav-item nav-link">BHS Open</a>
+                        <a href="#" class="nav-item nav-link">PPDB</a>
                         <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Kepegawaian</a>
                             <div class="dropdown-menu bg-light mt-2">
-                                <a href="<?= base_url('home/guru_kita')?>" class="dropdown-item">GURU KITA</a>
-                                <a href="<?= base_url('home/karir')?>" class="dropdown-item">KARIR</a>
-                                <a href="<?= base_url('home/testimonial')?>" class="dropdown-item">TESTIMONIAL</a>
+                                <a href="#" class="dropdown-item">Guru Kita</a>
+                                <a href="#" class="dropdown-item">Tu Kita</a>
+                                <a href="#" class="dropdown-item">Karir</a>
                             </div>
                         </div>
-                        <a href="<?= base_url('home/kontak')?>" class="nav-item nav-link">KONTAK</a>
+                        <a href="#" class="nav-item nav-link">Galeri</a>
+                        <a href="#" class="nav-item nav-link">Download</a>
                     </div>
                     <butaton type="button" class="btn text-white p-0 d-none d-lg-block" data-bs-toggle="modal"
                         data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton>

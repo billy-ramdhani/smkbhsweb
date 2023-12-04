@@ -10,6 +10,8 @@
   <meta name="author" content="">
 
   <title>Admin - <?= $title ?></title>
+    <!-- Favicon -->
+    <link href="<?php base_url() ?>assets/images/favicon/favicon.ico" rel="icon">
 
   <!-- Font Awesome -->
   <link href="<?= base_url("assets/back/vendors/fontawesome-free/css/all.min.css") ?>" rel="stylesheet" type="text/css">
@@ -19,6 +21,7 @@
   <link href="<?= base_url("assets/back/vendors/datatables/dataTables.bootstrap4.min.css") ?>" rel="stylesheet">
   <!-- Custom styles for this template-->
   <link href="<?= base_url("assets/back/css/sb-admin-2.min.css") ?>" rel="stylesheet">
+  
 
   <link rel="stylesheet" href="<?= base_url("assets/back/vendors/summernote/dist/summernote-bs4.min.css") ?>">
 

@@ -10,6 +10,7 @@ class Admin extends CI_Controller {
       $this->load->model('my_model', 'my', true);
       $this->load->model('menu_model', 'menu', true);
       $this->load->model('category_model', 'category', true);
+      $this->load->model('kepegawaian_model','kepegawaian', true);
       // $this->load->model('album_model', 'album', true);
       // $this->load->model('admin_model', 'admin', true);
    }
@@ -108,6 +109,22 @@ class Admin extends CI_Controller {
       $data['page'] = 'web/profil';
       $data['datatable'] = 'web/profil-datatable';
       $this->load->view('back/layouts/app', $data);
+   }
+
+   public function kepegawaian()
+   {
+      $data['title'] = 'Kepegawaian';
+      $data['kepegawaian'] = $this->kepegawaian->get_all();
+      $data['page'] = 'web/kepegawaian';
+      $this->load->view('back/layouts/app', $data);
+   }
+
+   public function testimonial()
+   {
+      $data['title'] = 'Testimonial';
+      $data['alumni'] = $this->alumni->get_all();
+      $data['page'] = 'web/testimonial';
+      $this->load->view ('back/layout/app', $data);
    }
 }
 

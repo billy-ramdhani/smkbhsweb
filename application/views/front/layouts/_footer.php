@@ -32,12 +32,12 @@ SMK Bina Harapan Sumedang, memegang peran penting sebagai sekolah pelopor dalam 
                     <a class="btn btn-link" href="">Career</a>
                 </div>
                 <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
-                    <h5 class="text-white mb-4">Our Services</h5>
-                    <a class="btn btn-link" href="">Robotic Automation</a>
-                    <a class="btn btn-link" href="">Machine learning</a>
-                    <a class="btn btn-link" href="">Predictive Analysis</a>
-                    <a class="btn btn-link" href="">Data Science</a>
-                    <a class="btn btn-link" href="">Robot Technology</a>
+                    <h5 class="text-white mb-4">Ekstrakulikuler</h5>
+                    <a class="btn btn-link" href="">Futsal Putra/Putri</a>
+                    <a class="btn btn-link" href="">Bulutangkis</a>
+                    <a class="btn btn-link" href="">PMR</a>
+                    <a class="btn btn-link" href="">Paskibra</a>
+                    <a class="btn btn-link" href="">KIR</a>
                 </div>
             </div>
         </div>
@@ -46,10 +46,7 @@ SMK Bina Harapan Sumedang, memegang peran penting sebagai sekolah pelopor dalam 
             <div class="copyright">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="#">SMK Bina Harapan Sumedang</a> | <a class="border-bottom" target="_blank" href="https://github.com/billy-ramdhani">Developer</a> |
-
-                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                        Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
+                        &copy; <a class="border-bottom" href="#">SMK Bina Harapan Sumedang</a> | a project by <a class="border-bottom" target="_blank" href="https://github.com/billy-ramdhani">Billy Ramdhani</a> & <a class="border-bottom" target="_blank" href="https://mr.sendyyk.com/"> Sendy Yulfizar Kuswara </a>
                     </div>
                     </div>
                 </div>

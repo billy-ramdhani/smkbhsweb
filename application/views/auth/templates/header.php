@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
-  <meta name="author" content="">
+  <meta name="billy ramdhani" content="">
 
   <title>Admin - <?= $title ?></title>
 
@@ -24,3 +24,4 @@
   <link href="<?= base_url("assets/back/css/auth.css") ?>" rel="stylesheet">
 
 </head>
+

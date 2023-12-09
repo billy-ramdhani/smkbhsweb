@@ -10,7 +10,7 @@ class Admin extends CI_Controller {
       $this->load->model('my_model', 'my', true);
       $this->load->model('menu_model', 'menu', true);
       $this->load->model('category_model', 'category', true);
-      $this->load->model('kepegawaian_model','kepegawaian', true);
+      $this->load->model('alumni_model','alumni', true);
       // $this->load->model('album_model', 'album', true);
       // $this->load->model('admin_model', 'admin', true);
    }
@@ -119,12 +119,12 @@ class Admin extends CI_Controller {
       $this->load->view('back/layouts/app', $data);
    }
 
-   public function testimonial()
+   public function testimoni()
    {
       $data['title'] = 'Testimonial';
       $data['alumni'] = $this->alumni->get_all();
-      $data['page'] = 'web/testimonial';
-      $this->load->view ('back/layout/app', $data);
+      $data['page'] = 'web/testimoni';
+      $this->load->view ('back/layouts/app', $data);
    }
 }
 
